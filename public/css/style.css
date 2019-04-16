@@ -1,0 +1,55 @@
+.navbar {
+    padding: 30px 10px;
+}
+a.nav-link.btn.btn-rounded {
+    border: 3px solid #5bc0de;
+    border-radius: 30px;
+    padding: 8px 16px;
+    font-size: 17px;
+}
+.hello:hover {
+    background: #5bc0de;
+    color: #fff !important;
+}
+.hello {
+    color: #5bc0de !important;
+}
+.align-right {
+    float: right;
+    text-align: right;
+}
+.nav-link {
+    color: #293347;
+    padding: 15px;
+    font-size: 17px;
+}
+a.normal:hover {
+    color: #5bc0de !important;
+}
+li.nav-item {
+    padding-right: 15px;
+}
+.thin {
+    font-weight:300;
+}
+.bold {
+    font-weight: 700;
+}
+
+/* section1*/
+.section-1 {
+    padding-top: 40px;
+}
+.section-1 .banner {
+    padding-top: 40px;
+}
+.section-1 h2.banner-subtitle {
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    line-height: 2;
+}
+.section-1 h1.bold.banner-title {
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
