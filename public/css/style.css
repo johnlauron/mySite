@@ -19,7 +19,7 @@ a.nav-link.btn.btn-rounded {
     text-align: right;
 }
 .nav-link {
-    color: #293347;
+    color: #293347 !important;
     padding: 15px;
     font-size: 17px;
 }
