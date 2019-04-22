@@ -50,10 +50,12 @@
         </div>
     </section>
     <section class="section-2">
-        <div class="about-me">
-            <div class="container">
-                <div class="content">
-                    <center><h2>Hi, I'm Ian. Nice to meet you</h2></center>
+        <div class="container">
+            <div class="content">
+                <div class="about-me">
+                    <div class>
+                    </div>
+                    <center><h2>Hi, I'm Ian Nice to meet you</h2></center>
                     <p>I graduated from Cebu Technological University taking of Bachelor of Science in Information and Communication Technology
                         i have 1 year experience on web development as a web developer i would like to explore more things of what can technologies can do
                         and go what is trending
