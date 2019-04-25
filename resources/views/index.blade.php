@@ -42,9 +42,9 @@
         <div class="banner">
             <div class="container">
                 <center>
-                <h1 class="bold banner-title">Hey, I'm a web developer.</h1>
-                <h2 class="thin banner-subtitle">I code beautifully simple things, and I love what I do.</h2>
-                <img src="{{ asset('images/avataaars-ian.svg') }}" alt="">
+                    <h1 class="bold banner-title">Hey, I'm a web developer.</h1>
+                    <h2 class="thin banner-subtitle">I code beautifully simple things, and I love what I do.</h2>
+                    <img src="{{ asset('images/avataaars-ian.svg') }}" alt="">
                 </center>
             </div>
         </div>
@@ -53,14 +53,27 @@
         <div class="container">
             <div class="content">
                 <div class="about-me">
-                    <div class>
+                    <div class="about-content">
+                        <center><h2>Hi, I'm Ian Nice to meet you</h2></center>
+                        <p>I graduated from Cebu Technological University taking of Bachelor of Science in Information and Communication Technology
+                            i have 1 year experience on web development as a web developer i would like to explore more things of what can technologies can do
+                            and go what is trending and this is my language/skills  
+                        </p>
                     </div>
-                    <center><h2>Hi, I'm Ian Nice to meet you</h2></center>
-                    <p>I graduated from Cebu Technological University taking of Bachelor of Science in Information and Communication Technology
-                        i have 1 year experience on web development as a web developer i would like to explore more things of what can technologies can do
-                        and go what is trending
-                        
-                    </p>
+                    <div class="skills-image">
+                        <div class="row">
+                            @foreach($datas as $data)
+                            <div class="col-md-3">
+                                <div class="round">
+                                    <img class="rounded-image" src="{{ asset($data->file_location) }}" alt="">
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="read-more">
+                        <a href="#" class="btn btn-custom-red">Read More</a>
+                    </div>
                 </div>
             </div>
         </div>

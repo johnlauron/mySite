@@ -11,10 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'SkillController@home');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::prefix('admin')->group(function () {
+    Route::name('admin.')->group(function () {
+        Route::get('/home', 'HomeController@index')->name('home');
+    });
+    Route::resource('skills', 'SkillController');
+});
+
+// Route::get('/admin', 'HomeController@index')->name('home');
