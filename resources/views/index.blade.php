@@ -65,7 +65,7 @@
                             @foreach($datas as $data)
                             <div class="col-md-3">
                                 <div class="round">
-                                    <img class="rounded-image" src="{{ asset($data->file_location) }}" alt="">
+                                    <img class="rounded-image" src="{{ asset($data->file_location) }}" alt="{{$data->skill_name}}" title="{{$data->skill_name}}">
                                 </div>
                             </div>
                             @endforeach

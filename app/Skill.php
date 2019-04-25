@@ -18,25 +18,29 @@ class Skill extends Model
         return $file_name->move($path, $file_name->getClientOriginalName());
     }
     public function storeData(array $data) {
-        DB::beginTransaction();
-        try{
-            //move file
-            $img_name = $data['file'];
-            $file_location = 'images/';
-            $this->moveFile($file_location, $img_name);
 
-            Skill::create([
-                'skill_name' => $data['skill_name'],
-                'file_location' => $file_location.''.$img_name->getClientOriginalName()
-            ]);
-        }
-        catch(Exception $e) {
-            DB::rollback();
-            throw $e;
-        }
+        DB::beginTransaction();
+            try{
+                //move file
+                $this->moveFile('images/', $data['file']);
+
+                Skill::create([
+                    'skill_name' => $data['skill_name'],
+                    'file_location' => 'images/'.$data['file']->getClientOriginalName()
+                ]);
+            }
+            catch(Exception $e) {
+                DB::rollback();
+                throw $e;
+            }
         DB::commit();   
+        
     }
     public function fetchAll() {
-        return Skill::orderBy('created_at', 'desc')->limit(8)->get();
+        // return Skill::latest()->limit(8)->get();
+        return Skill::IdDescending()->limit(8)->get();
+    }
+    public function scopeIdDescending($query) {
+        return $query->orderBy('id','DESC');
     }
 }
