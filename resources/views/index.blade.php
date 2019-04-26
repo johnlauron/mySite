@@ -128,14 +128,79 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="{{asset('images/coming-soo.png')}}" alt="">
+                                            <div class="overlay">
+                                                <h2>Soon</h2>
+                                                <p>
+                                                    <a class="info" target="_blank" href="#">Soon</a>
+                                                </p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="{{asset('images/coming-soo.png')}}" alt="">
+                                            <div class="overlay">
+                                                <h2>Soon</h2>
+                                                <p>
+                                                    <a class="info" target="_blank" href="#">Soon</a>
+                                                </p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="{{asset('images/coming-soo.png')}}" alt="">
+                                            <div class="overlay">
+                                                <h2>Soon</h2>
+                                                <p>
+                                                    <a class="info" target="_blank" href="#">Soon</a>
+                                                </p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="divider"></div>
-    <footer>
-
+    <footer style=" background-image: url('{{asset('images/footer.png')}}');">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{asset('images/facebook.png')}}" title="facebook">
+                        <img src="{{asset('images/instagram.png')}}" title="instagram">
+                        <img src="{{asset('images/twitter.png')}}" title="twitter">
+                    </div>
+                    <div class="col-md-3">
+                        <label>Contact No.</label>
+                        <p>09274040187</p>
+                        <label>Address</label>
+                        <p>Sangi Tabunoc Talisay City</p>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Email</label>
+                        <p>lauronianjohn101@gmail.com</p>
+                        <label>Github</label>
+                        <p>https://github.com/johnlauron</p>
+                        <label>gitlab</label>
+                        <p>https://gitlab.com/lauronianjohn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

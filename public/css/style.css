@@ -120,7 +120,7 @@ li.nav-item {
 }
 
 .section-3 .hovereffect {
-    width:100%;
+    width:90%;
     height:100%;
     float:left;
     overflow:hidden;
@@ -128,6 +128,7 @@ li.nav-item {
     text-align:center;
     cursor:default;
     border-radius: 6px;
+    margin-bottom: 50px;
 }
     
 .section-3 .hovereffect .overlay {
@@ -149,6 +150,8 @@ li.nav-item {
     -webkit-transition:all .4s linear;
     transition:all .4s linear;
     width: 100%;
+    height: 154px;
+    min-height: 154px;
 }
     
 .section-3 .hovereffect h2 {
@@ -211,9 +214,31 @@ li.nav-item {
 .section-3 .box {
     padding: 0px 10px;
 }
+.section-3 .box-description {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 90%;
+    text-align: center;
+}
+.section-3 p.port-title {
+    font-family: sans-serif;
+}
 .divider {
     border: solid 5px #5bc0de;
 }
 footer {
-    padding: 50px 0;
+    background-size: cover;
+    height: 220px;
+    background-repeat: no-repeat;
+}
+footer .footer-content {
+    padding-top: 50px;
+}
+footer label {
+    color: #585858;
+    margin: 0;
+}
+footer p {
+    color: #ececec;
+    margin: 0;
 }
