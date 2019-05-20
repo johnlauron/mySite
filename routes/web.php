@@ -16,10 +16,7 @@ Route::get('/', 'SkillController@home');
 Auth::routes();
 
 Route::prefix('admin')->group(function () {
-    Route::name('admin.')->group(function () {
-        Route::get('/home', 'HomeController@index')->name('home');
-    });
+   	Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('skills', 'SkillController');
+    Route::resource('/user', 'UserController');
 });
-
-// Route::get('/admin', 'HomeController@index')->name('home');
