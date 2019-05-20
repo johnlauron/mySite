@@ -65,7 +65,7 @@
                             @foreach($datas as $data)
                             <div class="col-md-3">
                                 <div class="round">
-                                    <img class="rounded-image" src="{{ asset($data->file_location) }}" alt="">
+                                    <img class="rounded-image" src="{{ asset($data->file_location) }}" alt="{{$data->skill_name}}" title="{{$data->skill_name}}">
                                 </div>
                             </div>
                             @endforeach
@@ -78,5 +78,129 @@
             </div>
         </div>
     </section>
+    <section class="section-3">
+        <div class="container">
+            <div class="content">
+                <div class="portfolio">
+                    <center>
+                        <h2>Portfolios</h2>
+                        <p>list of projects that i make/contribute more</p>
+                    </center>
+                    <div class="portfolio-images">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="{{asset('images/TAS.png')}}" alt="">
+                                            <div class="overlay">
+                                                <h2>Travel Agency Success</h2>
+                                                <p>
+                                                    <a class="info" target="_blank" href="http://dlxstaging.co/tas/">Visit site</a>
+                                                </p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="{{asset('images/DUDE.png')}}" alt="">
+                                            <div class="overlay">
+                                                <h2>DUDE</h2>
+                                                <p>
+                                                    <a class="info" target="_blank" href="http://dev.chrisnaval.com/login">Visit site</a>
+                                                </p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="{{asset('images/SPC.png')}}" alt="">
+                                            <div class="overlay">
+                                                <h2>SPC</h2>
+                                                <p>
+                                                    <a class="info" target="_blank" href="https://spc-app.scalingo.io/">Visit site</a>
+                                                </p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="{{asset('images/coming-soo.png')}}" alt="">
+                                            <div class="overlay">
+                                                <h2>Soon</h2>
+                                                <p>
+                                                    <a class="info" target="_blank" href="#">Soon</a>
+                                                </p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="{{asset('images/coming-soo.png')}}" alt="">
+                                            <div class="overlay">
+                                                <h2>Soon</h2>
+                                                <p>
+                                                    <a class="info" target="_blank" href="#">Soon</a>
+                                                </p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="{{asset('images/coming-soo.png')}}" alt="">
+                                            <div class="overlay">
+                                                <h2>Soon</h2>
+                                                <p>
+                                                    <a class="info" target="_blank" href="#">Soon</a>
+                                                </p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style=" background-image: url('{{asset('images/footer.png')}}');">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{asset('images/facebook.png')}}" title="facebook">
+                        <img src="{{asset('images/instagram.png')}}" title="instagram">
+                        <img src="{{asset('images/twitter.png')}}" title="twitter">
+                    </div>
+                    <div class="col-md-3">
+                        <label>Contact No.</label>
+                        <p>09274040187</p>
+                        <label>Address</label>
+                        <p>Sangi Tabunoc Talisay City</p>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Email</label>
+                        <p>lauronianjohn101@gmail.com</p>
+                        <label>Github</label>
+                        <p>https://github.com/johnlauron</p>
+                        <label>gitlab</label>
+                        <p>https://gitlab.com/lauronianjohn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
